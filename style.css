@@ -1,0 +1,99 @@
+*,
+*::before,
+*:after {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+    box-sizing: inherit;
+
+}
+
+#firstnav {
+    height: 9vh;
+    width: 90vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+
+}
+
+.HOME {
+    position: relative;
+    text-decoration: crimson;
+    color: rgb(160, 13, 43);
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;                                                                                                    
+    padding: 0 20 10 10 10 px;
+}
+
+.HOME:after {
+    content: "";
+    position: absolute;
+    background-color: rgb(160, 13, 43);
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: 30px;
+    transition: 0.3s;
+
+}
+
+.HOME:hover {
+    color: rgb(10, 10, 75)
+}
+
+.HOME:hover::after {
+    width: 90%;
+}
+
+h3 {
+    font-size: 13px;
+    line-height: 22px;
+    font-family: sans-serif;
+    color: aliceblue;
+    margin-left: 25px;
+    padding: 25px;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0; 
+    }
+}
+.firstmenu{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 1px;
+    
+}
+.firstmenu ul{
+    list-style: none;
+    display: flex;
+
+}
+.firstmenu ul li{
+   padding: 10 30px;
+   position: relative;
+
+}
+.firstmenu ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.3s;
+    padding: 10px 20px 20px ;
+    line-height: 26px;
+    font-weight: bold;
+    font-family: sans-serif;
+
+
+}
+.firstmenu ul li a:hover{
+    color:grey ;
+}
